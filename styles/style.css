@@ -1,144 +1,151 @@
-/* This is a comment; the browser will ignore comments */
-/* The comments below help explain the declarations */
-
 html {
-  font-size: 100%; /* sets a default font-size; useful for rem values */
-  background-color: #ffffff; /* makes the default background white */
-  color: #000000; /* makes the default text black */
+  font-size: 100%;
+  background-color: #fff
 }
-
 body {
-  padding: 0; /* padding and margin set to zero expand the body to the edges of the browser */
+  padding: 0;
   margin: 0;
-  font-family: arial, sans-serif; /* sets the default font-family for all body */
+  background-color: #7adab1;
+  font-family: arial, sans-serif;
 }
-
 header {
-  display: grid; /* defines the layout as grid; only applies to header */
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); /* makes responsive */
-  justify-items: end; /* flushes items in header to the right */
-  height: 3.5rem; /* sets the height of the header */
-  padding-top: 0.8rem; /* generates space around the header */
-  background-color: #242021;
-  color: #fff;
-  font-size: .5rem; /* this would result 1/2 of the 100% set in the html root selector above */
-  text-transform: uppercase;
-}
-
-header img {
-  height: 25%;
-}
-
-nav {
-  padding: 1rem 0 1rem 0;
-}
-
-
-nav ul {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  justify-items: center;
-  list-style-type: none; /* removes the list bullets */
-}
-
-nav ul li {
-  background-color: #bb4430;
-  color: #000000;
-  border: 1px solid #bb4430; /* creates a 1px solid border with #bb4430 as the color */
-  padding: 1rem 4rem 1rem 4rem; /* TBH, there's some argument about using rem/em
-  for non-font properties. you could try using pixels (px) to play around with this */
-  font-weight: bold;
-}
-
-nav ul li a {
-  background-color: #bb4430;
-  color: #ffffff;
-  text-transform: uppercase;
-  text-decoration: none; /* I use this to remove underlines from hyperlinks.
-  I would not advise removing hyperlinks for regular links, though. They help
-  accessibility */
-}
-
-nav ul li a:hover {
-  background-color: #bb4430;
-  color: #000000;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
-nav ul li:nth-child(2) { /* nth-child() is used for selecting patterns in items */
-  background-color: #f3dfa2;
-  color: #000000;
-  border: 1px solid #f3dfa2;
-  padding: 1rem 4rem 1rem 4rem;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-nav ul li:nth-child(2) a {
-  background-color: #f3dfa2;
-  color: #000000;
-  text-decoration: none;
-}
-
-nav ul li:nth-child(2) a:hover {
-  background-color: #f3dfa2;
-  color: #ffffff;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
-.wrapper {
-  background-color: #7ebdc2;
-  color: #000000;
-  margin: 0 2rem 0 2rem;
-}
-
-#primary {
-  display: grid; /* setting grid for the #primary area only */
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  padding: 0 0 1rem 2rem;
-}
-
-#main_article {
-  padding: 0 1rem 0 1rem;
-}
-
-figure {
-  padding: 1rem 1rem 0 1rem;
-}
-
-figure img {
-  width: 100%;
-  height: 100%;
-  border-radius: 50px;
-}
-
-figcaption {
-  text-align: center;
-  font-size: 0.80rem;
-}
-
-figcaption a {
-  background-color: #7ebdc2;
-  color: #000000;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
-#secondary {
-  background: #ffffff;
-  color: #000000;
-  padding: 1rem 0 1rem 2rem;
-}
-
-#sub_article {
-  padding: 2rem;
-}
-
-footer {
-  display: flex;
-  background-color: #242021;
+  justify-items: left;
+  height: 3.5rem;
+  padding-top: .1rem;
+  padding-bottom: .3rem;
+  background-color: #a97ada;
   color: #fff;
-  padding: 0.8rem 0 0 2rem;
+  font-size: 1rem;
+  text-transform: uppercase
+}
+header img{
+height: 35%;
+width: 50%;
+}
+nav ul{
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  justify-items: left;
+  list-style-type: none;
+}
+nav ul li{
+  background-color: #5f1d58;
+  border: 1px solid #5f1d58;
+  font-weight: bold;
+  text-align: center;
+}
+nav ul li a{
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+nav ul li a:hover{
+color: #ffffff;
+text-transform: uppercase;
+text-decoration: underline;
+}
+nav ul li:nth-child(1){
+  font-size: 1rem;
+  border: 1px solid #14065d;
+  font-weight: bold;
+}
+nav ul li:nth-child(1) a{
+  color: #fff;
+}
+nav ul li a:nth-child(1) a:hover{
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+nav ul li:nth-child(2){
+  font-size: 1rem;
+  background-color: #14065d;
+  border: 1px solid #14065d;
+  font-weight: bold;
+}
+nav ul li:nth-child(2) a{
+  color: #fff;
+}
+nav ul li a:nth-child(2) a:hover{
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+nav ul li:nth-child(3){
+  font-size: 1rem;
+  text-align: center;
+  background-color: #f33e09;
+  border: 1px solid #f33e09;
+  font-weight: bold;
+}
+nav ul li:nth-child(3) a{
+  color: #fff;
+}
+nav ul li a:nth-child(3) a:hover{
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+nav ul li:nth-child(4){
+  font-size: 1rem;
+  background-color: #038e7f;
+  border: 1px solid #14065d;
+  font-weight: bold;
+}
+nav ul li:nth-child(4) a{
+  color: #fff;
+}
+nav ul li a:nth-child(4) a:hover{
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+.wrapper{
+  background-color: #67d50c;
+  color: #000000;
+  margin: 0 2em 0 1em;
+}
+#primary{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  padding: 0 0 0rem 0rem;
+}
+#main_article{
+  padding: 0 1rem 0 1rem;
+  color: #000;
+}
+article h2{
+  text-align: center;
+  font-size: 50px;
+background: linear-gradient(to right, #ef5350, #f48fb1, #7e57c2, #2196f3, #26c6da, #43a047, #eeff41, #f9a825, #ff5722);
+}
+article h3{
+  text-align: center;
+  font-size: 42px;
+  color: #e84510;
+}
+article h4{
+  text-align: center;
+  font-size: 20px;
+  color: #000;
+}
+article p{
+  text-align: center;
+}
+figure img{
+  justify-items: center;
+  width: 25%;
+  padding-left: 29rem;
+}
+figcaption{
+  text-align: center;
+  font-family: arial, sans-serif;
+  font-size: 0.75rem;
+}
+footer{
+  display: flex;
+  background-color: #a97ada;
+  color: #fff;
+  padding: 0em 0 0 2em;
 }
