@@ -206,7 +206,7 @@ header h2{
     margin:1em;
     font-family: Verdana, sans-serif;
     border: 5px #2f4550 solid;
-    background-color: #595959;
+    background-color: #F7C43B;
     color: white;
     font-weight: 400;
     text-align: center;
@@ -273,7 +273,7 @@ header h2{
 }
 
 footer{
-  background-color: #2f4550;
+  background-color: #F7C43B;
   text-align: center;
   display: flex;
   flex-direction: column;
