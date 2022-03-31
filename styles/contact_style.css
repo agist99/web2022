@@ -63,7 +63,7 @@ body {
     padding-top: 0.30rem;
     font-family: Georgia, serif;
     font-size: 25px;
-    background-color: #34568B;
+    background-color: #FF6F61;
     line-height: normal;
     text-align: center;
     }
@@ -88,7 +88,7 @@ body {
 
 a{
   text-decoration: none;
-  color:#F7C43B;
+  color:#FF6F61;
 }
 a:hover{
   color:white;
