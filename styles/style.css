@@ -112,7 +112,7 @@ text-align: center;
 display: flex;
 flex-direction: column;
 justify-items: start;
-/*border: solid 2px white;*/
+
 }
 
 footer h3{
@@ -137,7 +137,7 @@ footer h3{
     margin:1em;
     font-family: Verdana, sans-serif;
     border: 5px #2f4550 solid;
-    background-color: #F7C43B;
+    background-color: #FF6F61;
     color: white;
     font-weight: 400;
     text-align: center;
